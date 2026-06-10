@@ -141,6 +141,53 @@ main.pagina-inicial {
 }
 
 /* ========================= */
+/* CONTATOS - SOMENTE INDEX */
+/* ========================= */
+
+.pagina-inicial .contato-inicial {
+  margin-top: 35px;
+}
+
+.pagina-inicial .contato-inicial h3 {
+  color: var(--cor-principal);
+  font-size: 24px;
+  margin-bottom: 18px;
+}
+
+.pagina-inicial .baloes-contato {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.pagina-inicial .balao-contato {
+  width: 85px;
+  height: 85px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 4px 15px var(--cor-sombra);
+
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.pagina-inicial .balao-contato img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  display: block;
+}
+
+.pagina-inicial .balao-contato:hover {
+  transform: translateY(-5px);
+}
+
+/* ========================= */
 /* PÁGINA DE PROJETOS */
 /* ========================= */
 
@@ -167,14 +214,12 @@ main.pagina-projetos {
   margin-bottom: 30px;
 }
 
-/* Área com foto + cards */
 .pagina-projetos .area-projetos {
   display: flex;
   align-items: flex-start;
   gap: 30px;
 }
 
-/* Foto da esquerda */
 .pagina-projetos .foto-projetos {
   width: 28%;
   min-width: 200px;
@@ -186,7 +231,6 @@ main.pagina-projetos {
   border-radius: 10px;
 }
 
-/* Cards ao lado da foto */
 .pagina-projetos .projetos-container {
   flex: 1;
 
@@ -195,7 +239,6 @@ main.pagina-projetos {
   gap: 28px;
 }
 
-/* Link dos cards */
 .pagina-projetos .card-link {
   text-decoration: none;
   color: inherit;
@@ -210,7 +253,6 @@ main.pagina-projetos {
   transform: translateY(-5px);
 }
 
-/* Card */
 .pagina-projetos .projeto-card {
   height: 100%;
   background-color: var(--cor-card);
@@ -332,6 +374,10 @@ footer {
 
   .pagina-inicial .hero-imagem img {
     width: 320px;
+  }
+
+  .pagina-inicial .baloes-contato {
+    justify-content: center;
   }
 
   main.pagina-projetos {
